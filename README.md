@@ -9,7 +9,7 @@ Instagram Application
 # Data Flow
 The following functions are used in the data flow of this project:
 
-_**Mappings:**_ 
+# Mappings
 
 The following are the mappings available in the Instagram Application controller:
 

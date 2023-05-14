@@ -47,7 +47,8 @@ The following are the mappings available in the Instagram Application controller
   URL: /update/mobile/{mobile}/{email}/{token}
   Path Variables: mobile, email, and token
   Response: ResponseEntity<String>
-_**Models:**_ 
+
+## Models
 
 The InstaPost class represents a post in an Instagram-like application. It contains fields for the post ID, creation and update timestamps, and the post data. Additionally, it has a Many-to-One relationship with InstaUser class, which represents the user who created the post.
 
@@ -58,7 +59,7 @@ The AuthenticationToken class represents an authentication token used to authent
 Overall, these classes represent a simple data model for an Instagram-like application with basic user authentication functionality.
 
 
-_**Controller:**_ 
+## Controller
 
 
 The InstaPostController class handles HTTP requests related to Instagram-like posts. It includes methods for creating a new post and retrieving all posts. The createPost() method creates a new post by calling the InstaPostService and returns the created post in the HTTP response. The getAllPost() method retrieves all posts for a given user email and authentication token by calling the InstaPostService and AuthenticationService and returns the list of posts in the HTTP response.
@@ -66,7 +67,7 @@ The InstaPostController class handles HTTP requests related to Instagram-like po
 The InstaUserController class handles HTTP requests related to Instagram-like users. It includes methods for user signup, user sign-in, and updating user details. The signup() method creates a new user by calling the InstaUserService and returns the user details in the HTTP response. The signin() method authenticates the user by calling the InstaUserService and returns the authentication token in the HTTP response. The updateUserMobileByEmail() method updates the user's mobile number for a given user email and authentication token by calling the InstaUserService and AuthenticationService and returns the HTTP response indicating whether the update was successful.
 
 
-_**Services**:_ 
+## Services
 
 The InstaUser class contains attributes such as first name, last name, age, email, phone number, and password, which are used to register and authenticate users. The AuthenticationToken class represents a user token that is generated upon successful authentication. The AuthenticationService class provides methods to save and retrieve user tokens from the database.
 
